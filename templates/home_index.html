@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>O'quvchilar ro'yxati</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>ism</th>
+    <th>familiya</th>
+    <th>raqami</th>
+  </tr>
+    {% for i in index %}
+  <tr>
+    <td><img style = "height:50px; width:50px; margin:50px; border-radius:50px"src="{{i.photo.url}}"></td>
+    <td>{{ i.first_name }}</td>
+    <td>{{ i.last_name }}</td>
+    <td>{{ i.phone_number }}</td>
+  </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>O'quvchilar ro'yxati</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>ism</th>
+    <th>familiya</th>
+    <th>raqami</th>
+    <th>photos</th>
+
+  </tr>
+    {% for i in index %}
+  <tr>
+
+
+     <td>{{ i.first_name }} </td>
+    <td>{{ i.last_name }}</td>
+    <td>{{ i.phone_number }}</td>
+     <td><img style = "height:50px; width:50px; margin:50px; border-radius:50px" src="{{ i.photos }}" alt="IMG"></td>
+
+
+  </tr>
+    {% endfor %}
+</table>
+</body>
+</html> {% endcomment %}

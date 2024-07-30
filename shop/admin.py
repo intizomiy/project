@@ -1,3 +1,4 @@
 from django.contrib import admin
+from shop.models import Index
 
-# Register your models here.
+admin.site.register(Index)
